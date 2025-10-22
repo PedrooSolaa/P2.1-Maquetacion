@@ -48,3 +48,40 @@
   background-color: #003366; /* Cambia el color según el tono de azul que desees */
   margin-bottom: 8px;
 }
+
+/* Colors */
+:root {
+  /* Mode 1 */
+  /* color */
+  --auxiliary-acentos-1: #c55a26;
+  --auxiliary-acentos-2: #e3be86;
+  --auxiliary-hover: #faa82a;
+  --basics-black: #000000;
+  --basics-white: #f1f0ea;
+  --primary-fondo: var(--basics-white);
+  --primary-secciones-1: #112c50;
+  --secondary-secciones-2: #b9cade;
+  --secondary-secciones-3: #d7c2b6;
+  --text-on-dark: var(--basics-white);
+  --text-primary: var(--basics-black);
+}
+/* Typography */
+:root {
+  /* Mode 1 */
+  /* number */
+  --size-button-text: 0.875rem;
+  --size-parrafo: 1rem;
+  --size-h4: 1.125rem;
+  --size-texto-destacado: 1.25rem;
+  --size-h3: 2rem;
+  --size-h2: 2.25rem;
+  --size-h1: 3.4375rem;
+  /* string */
+  --weight-parrafo: Regular;
+}
+/* Borders-SIzes */
+:root {
+  /* Mode 1 */
+  /* number */
+  --radius-button-radius: 0.625rem;
+}
