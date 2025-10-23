@@ -27,6 +27,8 @@ body {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  pointer-events: none; /* allow clicks through the overlay */
 }
 
 .top-bar {
@@ -114,6 +116,7 @@ nav {
   margin: 0 auto;
   padding: 6rem 2rem;
   color: var(--text-on-dark);
+  z-index: 1; /* ensure content (buttons) is above the overlay */
 }
 
 .highlight {
@@ -192,13 +195,27 @@ nav {
 
 /* Services Section */
 .services {
-  background-color: var(--primary-secciones-1);
+  position: relative;
+  background: url('assets/img/techo-cristal.jpg') no-repeat center center;
+  background-size: cover;
   color: var(--text-on-dark);
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
+  overflow: hidden;
+}
+
+.services::before {
+  /* dark overlay to keep text readable */
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none; /* allow clicks through overlay */
 }
 
 .services h3 {
+  position: relative;
+  z-index: 1;
   font-size: var(--size-h3);
   margin-bottom: 2rem;
   max-width: 800px;
@@ -207,6 +224,8 @@ nav {
 }
 
 .services p {
+  position: relative;
+  z-index: 1;
   font-size: var(--size-texto-destacado);
   margin-bottom: 2rem;
   max-width: 600px;
@@ -303,7 +322,9 @@ blockquote footer {
   margin-bottom: 1rem;
   color: var(--primary-secciones-1);
 }
-
+.text-dark {
+  color: black;
+}
 .contact-form p {
   font-size: var(--size-texto-destacado);
   margin-bottom: 2rem;
