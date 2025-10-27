@@ -11,7 +11,7 @@ body {
   color: var(--text-primary);
 }
 
-/* Header Styles */
+
 .hero {
   background: url('assets/img/header-background.jpg') no-repeat center center;
   background-size: cover;
@@ -28,7 +28,7 @@ body {
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 0;
-  pointer-events: none; /* allow clicks through the overlay */
+  pointer-events: none; 
 }
 
 .top-bar {
@@ -116,7 +116,7 @@ nav {
   margin: 0 auto;
   padding: 6rem 2rem;
   color: var(--text-on-dark);
-  z-index: 1; /* ensure content (buttons) is above the overlay */
+  z-index: 1; 
 }
 
 .highlight {
@@ -193,7 +193,7 @@ nav {
   border-radius: var(--radius-button-radius);
 }
 
-/* Services Section */
+
 .services {
   position: relative;
   background: url('assets/img/techo-cristal.jpg') no-repeat center center;
@@ -205,12 +205,12 @@ nav {
 }
 
 .services::before {
-  /* dark overlay to keep text readable */
+
   content: '';
   position: absolute;
   inset: 0;
   z-index: 0;
-  pointer-events: none; /* allow clicks through overlay */
+  pointer-events: none;
 }
 
 .services h3 {
@@ -233,7 +233,7 @@ nav {
   margin-right: auto;
 }
 
-/* Team Section */
+
 .team {
   max-width: 1200px;
   margin: 4rem auto;
@@ -271,7 +271,7 @@ nav {
   color: var(--primary-secciones-1);
 }
 
-/* Testimonials Section */
+
 .testimonials {
   background-color: var(--secondary-secciones-2);
   padding: 4rem 2rem;
@@ -309,7 +309,7 @@ blockquote footer {
   font-weight: bold;
 }
 
-/* Contact Form Section */
+
 .contact-form {
   max-width: 800px;
   margin: 4rem auto;
@@ -365,7 +365,7 @@ form button {
   cursor: pointer;
 }
 
-/* Location Section */
+
 .location {
   background-color: var(--secondary-secciones-3);
   padding: 4rem 2rem;
@@ -395,7 +395,7 @@ form button {
   border-radius: var(--radius-button-radius);
 }
 
-/* Footer */
+
 footer {
   background-color: var(--primary-secciones-1);
   color: var(--text-on-dark);
@@ -454,7 +454,7 @@ footer ul li {
   cursor: pointer;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: var(--size-h2);
