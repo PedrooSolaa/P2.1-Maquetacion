@@ -145,24 +145,27 @@
   </section>
 
   <!-- Contact Form Section -->
-  <section class="contact-form">
-    <h3>Consulta gratuita</h3>
-    <p>
-      Programar una consulta es fácil. Llámenos directamente o complete el
-      formulario en línea.
-    </p>
-    <form action="#" method="POST">
-      <label for="name">Nombre</label>
-      <input type="text" id="name" name="name" />
-      <label for="surname">Apellidos</label>
-      <input type="text" id="surname" name="surname" />
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" />
-      <label for="subject">Título</label>
-      <input type="text" id="subject" name="subject" />
-      <label for="message">Motivo de consulta</label>
-      <textarea id="message" name="message"></textarea>
-      <button type="submit" class="btn primary">Enviar</button>
+   <!-- Contact Form Section -->
+  <section class="consulta-gratuita">
+    <h3 class="consulta-gratuita__titulo">Consulta gratuita</h3>
+    <p class="consulta-gratuita__descripcion">Programar una consulta es fácil. Puede llamarnos directamente al número proporcionado en nuestro sitio web o completar el formulario de contacto en línea.</p>
+    <form class="formulario-contacto">
+      <div class="campo-formulario">
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required class="campo-entrada">
+      </div>
+      <div class="campo-formulario">
+        <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required class="campo-entrada">
+      </div>
+      <div class="campo-formulario">
+        <input type="email" id="email" name="email" placeholder="Email" required class="campo-entrada">
+      </div>
+      <div class="campo-formulario">
+        <input type="tel" id="tlf" name="tlf" placeholder="Tlf" required class="campo-entrada">
+      </div>
+      <div class="campo-formulario campo-formulario--ancho-completo">
+        <textarea id="motivo" name="motivo" placeholder="Motivo de consulta" required class="campo-entrada campo-entrada--area-texto"></textarea>
+      </div>
+      <button type="submit" class="boton-enviar">ENVIAR</button>
     </form>
   </section>
 

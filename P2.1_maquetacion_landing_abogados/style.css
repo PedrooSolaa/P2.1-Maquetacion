@@ -432,59 +432,73 @@ blockquote footer {
 .team-members .member .text-card{
   color: rgba(27,37,64,0.8);
 }
-.contact-form {
-  max-width: 800px;
+.consulta-gratuita {
+  max-width: 1000px;
   margin: 4rem auto;
   padding: 2rem;
-  text-align: center;
 }
 
-.contact-form h3 {
+.consulta-gratuita__titulo {
   font-size: var(--size-h3);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   color: var(--primary-secciones-1);
 }
-.text-dark {
-  color: black;
-}
-.contact-form p {
+
+.consulta-gratuita__descripcion {
   font-size: var(--size-texto-destacado);
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  color: rgba(0,0,0,0.8);
 }
 
-form {
+.formulario-contacto {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  text-align: left;
+  gap: 1.5rem;
 }
 
-form label {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: var(--primary-secciones-1);
+.campo-formulario {
+  position: relative;
 }
 
-form input,
-form textarea {
+.campo-formulario--ancho-completo {
+  grid-column: 1 / -1;
+}
+
+.campo-entrada {
   width: 100%;
-  padding: 0.8rem;
-  border: 1px solid var(--secondary-secciones-2);
-  border-radius: var(--radius-button-radius);
-  margin-bottom: 1rem;
-}
-
-form textarea {
-  grid-column: 1 / -1;
-  resize: vertical;
-  min-height: 150px;
-}
-
-form button {
-  grid-column: 1 / -1;
-  justify-self: center;
+  padding: 1rem;
   border: none;
+  background-color: rgba(180,167,195,0.2);
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.campo-entrada::placeholder {
+  color: rgba(0,0,0,0.6);
+}
+
+.campo-entrada--area-texto {
+  min-height: 180px;
+  resize: vertical;
+}
+
+.boton-enviar {
+  grid-column: 1 / -1;
+  justify-self: end;
+  background-color: var(--auxiliary-acentos-1);
+  color: white;
+  padding: 0.8rem 2.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-enviar:hover {
+  background-color: #a84d20;
 }
 
 
