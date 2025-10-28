@@ -76,6 +76,21 @@ body {
   --weight-parrafo: 400;
 /* Borders-SIzes */
   --radius-button-radius: 0.625rem;
+
+  /* layout variables team section */
+  --margin-grid: 48px;
+  --padding-sections-big: 48px;
+  --padding-top-box-blue: 28px;
+  --padding-box-blue: 36px;
+  --background-box-blue: rgba(180,167,195,0.9); /* light lilac */
+  --border-radius-items: 18px;
+  --background-square-separation: #112c50;
+  --font-family-title: 'RecklessNeue', Georgia, 'Times New Roman', serif;
+  --font-family-text: 'NeueMontreal', Arial, sans-serif;
+  --font-size-section-title: 2rem;
+  --font-size-p-inicio: 1rem;
+  --padding-separation-text-sections: 18px;
+  --font-size-p: 0.95rem;
 }
 
 nav {
@@ -258,11 +273,18 @@ nav {
 }
 
 .team-members img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  width: 100%;
+  height: 240px;
+  border-radius: 8px;
   margin-bottom: 1rem;
   object-fit: cover;
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: start;
 }
 
 .team-members h4 {
@@ -309,7 +331,107 @@ blockquote footer {
   font-weight: bold;
 }
 
+.team-grid{
+    margin-left: var(--margin-grid);
+    margin-right: var(--margin-grid);
+    padding-top: var(--padding-sections-big);
+    padding-bottom: var(--padding-sections-big);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    position: relative;
 
+}
+
+.team-left{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    
+}
+
+.team-right{
+    grid-column: 4 / 13;
+    grid-row: 1;
+}
+
+.blue-square-team{
+    position: absolute;
+    width: 40px;
+    height: 5px; 
+    background-color: var(--background-square-separation); 
+    margin-bottom: 8px;
+    top:60px;
+}
+
+.title-team{
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-section-title);
+    font-weight: 100;
+    padding-bottom: var(--padding-sections-big);
+}
+
+.box-blue{
+    padding-top: var(--padding-top-box-blue);
+    padding-right: var(--padding-box-blue);
+    padding-left: var(--padding-box-blue);
+    padding-bottom: var(--padding-box-blue);
+    background-color: var(--background-box-blue);
+    border-radius: var(--border-radius-items);
+}
+
+.text-box-team {
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-p-inicio);
+    padding-bottom: var(--padding-separation-text-sections);
+}
+
+.title-card{
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-p-inicio);
+    font-weight: 300;
+}
+
+.text-card{
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-p);
+}
+/* Left column button and link */
+.btn-secondary{
+  background: var(--auxiliary-acentos-1);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.btn-secondary .button-link-white,
+.button-link-white{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* card styling inside the lilac box */
+.box-blue .text-box-team{
+  background: rgba(255,255,255,0.06);
+  padding: 18px 20px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.team-members .member{
+  text-align: left;
+}
+
+.team-members .member .title-card{
+  color: #1b2540;
+  margin-top: 8px;
+}
+
+.team-members .member .text-card{
+  color: rgba(27,37,64,0.8);
+}
 .contact-form {
   max-width: 800px;
   margin: 4rem auto;
