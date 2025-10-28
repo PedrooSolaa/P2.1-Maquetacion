@@ -83,6 +83,7 @@
     <a href="#" class="btn secondary">Conoce a nuestro equipo</a>
   </section>
 
+
   <!-- Team Section -->
   <section class="team team-grid">
     <div class="team-left">
@@ -144,7 +145,6 @@
     </div>
   </section>
 
-  <!-- Contact Form Section -->
    <!-- Contact Form Section -->
   <section class="consulta-gratuita">
     <h3 class="consulta-gratuita__titulo">Consulta gratuita</h3>
@@ -170,45 +170,66 @@
   </section>
 
   <!-- Location Section -->
-  <section class="location">
-    <h3>Dónde encontrarnos</h3>
-    <p>C/ Barcas 31, Valencia CP. 46005</p>
-    <div class="map">
-      <!-- Embed Google Maps iframe or similar -->
-      <iframe src="https://www.google.com/maps/embed?..."></iframe>
+  <section class="ubicacion">
+    <div class="ubicacion__contenido">
+      <div class="ubicacion__separador"></div>
+      <h3 class="ubicacion__titulo">Dónde encontrarnos</h3>
+      <p class="ubicacion__direccion">C/ Barcas 31, Valencia CP. 46005</p>
+    </div>
+    <div class="ubicacion__mapa">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.9955234547687!2d-0.37419518434596037!3d39.470793879484096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f2b40b106e9%3A0xb0e83e0f6d461f45!2sCarrer%20de%20les%20Barques%2C%2031%2C%2046002%20Val%C3%A8ncia%2C%20Valencia!5e0!3m2!1ses!2ses!4v1635409824761!5m2!1ses!2ses" 
+        allowfullscreen="" 
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <div class="footer-info">
-      <a href="#">Política de privacidad</a>
-      <a href="#">FAQS</a>
-      <a href="#">Cómo llegar</a>
-    </div>
-    <div class="footer-nav">
-      <h4>NAVIGATION</h4>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Casos de estudio</a></li>
-        <li><a href="#">Sobre nosotros</a></li>
-      </ul>
-    </div>
-    <div class="footer-logo">
-      <h1>Maziul & Asociados</h1>
-      <div class="social-media">
-        <a href="#">Facebook</a>
-        <a href="#">Twitter</a>
-        <a href="#">LinkedIn</a>
+  <footer class="pie-pagina">
+    <div class="pie-pagina__contenedor">
+      <div class="pie-pagina__columna">
+        <h4 class="pie-pagina__titulo">Legal</h4>
+        <div class="pie-pagina__enlaces">
+          <a href="#" class="pie-pagina__enlace">Política de privacidad</a>
+          <a href="#" class="pie-pagina__enlace">Location</a>
+          <a href="#" class="pie-pagina__enlace">FAQS</a>
+          <a href="#" class="pie-pagina__enlace">Cómo llegar</a>
+        </div>
       </div>
-    </div>
-    <div class="newsletter">
-      <h4>Suscríbete a nuestra newsletter</h4>
-      <form action="#" method="POST">
-        <input type="email" placeholder="Tu email" />
-        <button type="submit">Enviar</button>
-      </form>
+
+      <div class="pie-pagina__columna">
+        <h4 class="pie-pagina__titulo">NAVIGATION</h4>
+        <ul class="pie-pagina__navegacion">
+          <li><a href="#" class="pie-pagina__enlace">Home</a></li>
+          <li><a href="#" class="pie-pagina__enlace">Servicios</a></li>
+          <li><a href="#" class="pie-pagina__enlace">Casos de estudio</a></li>
+          <li><a href="#" class="pie-pagina__enlace">Sobre nosotros</a></li>
+        </ul>
+      </div>
+
+      <div class="pie-pagina__columna">
+        <img src="assets/img/logo-maziul.svg" alt="Maziul & Asociados" class="pie-pagina__logo">
+        <div class="pie-pagina__redes">
+          <a href="#" class="pie-pagina__red-social">
+            <img src="assets/img/twitter.svg" alt="Twitter">
+          </a>
+          <a href="#" class="pie-pagina__red-social">
+            <img src="assets/img/facebook.svg" alt="Facebook">
+          </a>
+          <a href="#" class="pie-pagina__red-social">
+            <img src="assets/img/instagram.svg" alt="Instagram">
+          </a>
+        </div>
+      </div>
+
+      <div class="pie-pagina__columna">
+        <h4 class="pie-pagina__titulo">Apúntate a nuestra newsletter</h4>
+        <form class="pie-pagina__newsletter">
+          <input type="email" placeholder="Tu email" class="pie-pagina__input">
+          <button type="submit" class="pie-pagina__boton">ENVIAR</button>
+        </form>
+      </div>
     </div>
   </footer>
 </body>
